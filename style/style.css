@@ -1,0 +1,320 @@
+:root { 
+    --primario: #7ED957; 
+    --secundario: #00BF63;
+} 
+ 
+html { 
+    box-sizing: border-box;
+    margin: 0;
+} 
+ 
+*, *:before, *:after { 
+    box-sizing: inherit; 
+} 
+ 
+body { 
+    font-family: "Arimo", sans-serif; 
+    margin: 0;
+} 
+ 
+header { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+} 
+ 
+.header-p1 { 
+    width: 50%; 
+    height: 3rem; 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-size: 2rem; 
+} 
+ 
+.circle { 
+    display: inline-block; 
+    background: var(--primario); 
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+    margin-bottom: 0px; 
+    margin-right: 10px; 
+} 
+ 
+.header-p2 { 
+    width: 50%; 
+    height: 3rem; 
+    text-align: center; 
+    padding: 1.5rem; 
+    text-transform: uppercase; 
+} 
+ 
+.container {  
+    width: 100%; 
+    height: 111vh;
+    position: relative; 
+    background: none;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-image: url(/img/2.png); 
+    background-position: center center; 
+    z-index: -1; 
+} 
+ 
+.hijo { 
+    width: 100%; 
+    height: 111vh;
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+ 
+.caja1 { 
+    width: 42rem;
+    height: 4rem; 
+    background-color: var(--secundario);
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+} 
+ 
+.caja2 { 
+    width: 71rem;
+    height: 4rem; 
+    background-color: var(--secundario); 
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+} 
+ 
+.caja3 { 
+    width: 71rem;
+    height: 4rem; 
+    background-color: var(--secundario); 
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+} 
+
+.caja4 { 
+    width: 66rem;
+    height: 2rem; 
+    background-color: black; 
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+} 
+
+.caja5 { 
+    width: 55rem;
+    height: 2rem; 
+    background-color: black; 
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+} 
+ 
+.caja1 p { 
+    color: white; 
+    font-size: 3rem; 
+    text-transform: uppercase; 
+    text-align: center; 
+    font-weight: 500; 
+    margin-top: 0rem;
+} 
+ 
+.caja2 p { 
+    color: white; 
+    font-size: 3rem; 
+    text-transform: uppercase; 
+    text-align: center; 
+    font-weight: 500; 
+    margin-top: 0rem;
+    margin-right: 8rem;
+} 
+ 
+.caja3 p { 
+    color: white; 
+    font-size: 3rem; 
+    text-transform: uppercase; 
+    text-align: center; 
+    font-weight: 500; 
+    margin-top: 0rem;
+    margin-right: 22rem;
+}
+
+.caja4 p { 
+    color: white; 
+    font-size: 2rem; 
+    text-align: center; 
+    font-weight: 500; 
+    margin-top: 0rem;
+    margin-right: 14rem;
+}
+
+.caja5 p { 
+    color: white; 
+    font-size: 2rem; 
+    text-align: center; 
+    font-weight: 500; 
+    margin-top: 0rem;
+    margin-right: 22rem;
+}
+
+.container-dos {
+    width: 100%; 
+    height: 50vh;
+}
+
+.text {
+    width: 82%;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-dos {
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.text-m {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.img1 {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+}
+
+.img2 {
+    width: 15rem;
+    height: 14.5rem;
+    position: relative;
+}
+
+.img3 {
+    width: 15rem;
+    height: 13rem;
+    position: relative;
+    top: 10px;
+}
+
+.texto-tres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    gap: 15rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -1rem;
+}
+
+.footer{ 
+    width: 100%; 
+    float: left; 
+    height: 80px; 
+    background-color: var(--secundario);
+    align-content: center; 
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    color: #EEEEEE;
+    font-size: 20px;
+}
+
+ @media (width <= 2200px) {
+    .container {
+        height: 80vh;
+    }
+    .hijo{
+        height: 84vh;
+    }
+    .caja4 {
+        width: 60rem;
+    }
+    .caja5 {
+        width: 48rem;
+    }
+}
+
+@media (width <= 1500px) {
+    .container {
+        height: 60vh;
+    }
+    .hijo {
+        height: 60vh;
+    }
+    .caja1 {
+        width: 36rem;
+    }
+    .caja2, .caja3 {
+        width: 53rem;
+    }
+    .caja1 p {
+        margin-right: 12rem;
+    }
+    .caja4 {
+        width: 44rem;
+    }
+    .caja5 {
+        width: 42rem;
+    }
+    .caja4 p {
+        font-size: 24px;
+    }
+    .caja5 p {
+        font-size: 24px;
+    }
+}
+
+@media (width <= 1200px) {
+    .caja1 {
+        width: 27rem;
+    }
+    .caja1 p {
+        font-size: 2.5rem;
+        margin-right: 6rem;
+    }
+    .caja2 {
+        width: 40rem;
+    }
+    .caja2 p {
+        font-size: 2rem;
+    }
+    .caja3 {
+        width: 40rem;
+    }
+    .caja3 p {
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-left: 52px;
+    }
+    .caja4 {
+        width: 36rem;
+    }
+    .caja5 {
+        width: 30rem;
+    }
+    .caja4 p {
+        font-size: 18px;
+    }
+    .caja5 p {
+        font-size: 18px;
+        margin-right: 16rem;
+    }
+}
